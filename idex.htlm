@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,7 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="game-container"></div> <!-- Aquí se irá cargando cada nivel -->
+  <div id="game-container">
+    <!-- Aquí se cargará el contenido dinámicamente -->
+  </div>
+
   <script src="game.js"></script>
 </body>
 </html>
