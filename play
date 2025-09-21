@@ -1,0 +1,6 @@
+mi-juego/
+│ index.html   <-- pantalla principal
+│ style.css    <-- estilos
+│ game.js      <-- lógica del juego
+│ preguntas.json  <-- (opcional) para almacenar preguntas/respuestas
+│ img/         <-- carpeta con imágenes para el nivel 2 y el laberinto
