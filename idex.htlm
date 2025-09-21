@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de 3 Niveles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container"></div> <!-- Aquí se irá cargando cada nivel -->
+  <script src="game.js"></script>
+</body>
+</html>
