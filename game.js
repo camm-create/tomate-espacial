@@ -9,8 +9,8 @@ function startGame() {
 
 function showIntro() {
   container.innerHTML = `
-    <h1>Bienvenido a mi juego</h1>
-    <p>Supera los 3 niveles para ganar. ¿Listo?</p>
+    <h1>La misión ha comenzado</h1>
+    <p>Estudiando los efectos de la baja gravedad en el crecimiento de algunas plantas, el astronauta Frank Rubio ha perdido un tomate en la Estación Espacial Internacional. Para ayudarlo a recuperar el tomate perdido y completar la misión, deberás superar algunos retos...</p>
     <button onclick="startLevel(1)">¡Empezar!</button>
   `;
 }
@@ -35,18 +35,30 @@ function startLevel(level) {
 function showLevel1Intro() {
   container.innerHTML = `
     <h2>Nivel 1</h2>
-    <p>Responde las siguientes preguntas de opción múltiple.</p>
+    <p>Respondé las siguientes preguntas.</p>
     <button onclick="loadLevel1()">Comenzar Nivel 1</button>
   `;
 }
 
 function loadLevel1() {
-  container.innerHTML = `
-    <h3>Pregunta 1</h3>
-    <p>¿Cuál es la capital de Francia?</p>
-    <button onclick="checkAnswer(1,true)">París</button>
-    <button onclick="checkAnswer(1,false)">Roma</button>
-  `;
+  [
+  {
+    "pregunta": "¿Qué es un tomate?",
+    "opciones": ["Una fruta", "Una verdura", "Un animal"],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es el planeta más cercano al Sol?",
+    "opciones": ["Venus", "Mercurio", "Marte"],
+    "respuesta": 1
+  }
+    {
+    "pregunta": "En la estación Espacial Internacional, la gravedad es...",
+    "opciones": ["Muy alta", "Normal, como en La Tierra", "Muy baja, casi cero"],
+    "respuesta": 2
+  }
+]
+
 }
 
 function checkAnswer(question, isCorrect) {
